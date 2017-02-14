@@ -1,0 +1,56 @@
+body, header, div, h1 {
+  margin  : 0;
+  padding : 0;
+}
+
+body {
+  color           : #011627;
+  background-color: #FDFFFC;
+  font-family     : "Lora", serif;
+}
+
+td {
+  text-align: center;
+}
+
+.header {
+  max-width : 1000px;
+  margin    : 0 auto;
+  padding   : 20px;
+  width     : 100%;
+}
+
+.header-text {
+  display     : inline-block;
+  font-size   : 48px;
+  font-weight : bold;
+  width       : 50%;
+}
+
+.scene {
+  height: 100vh;
+  width : 100vw;
+}
+
+.table {
+  max-width : 1000px;
+  margin    : 0 auto;
+  width     : 100%;
+}
+
+.table-content {
+  width   : 100%;
+  padding : 10px 40px;
+}
+
+.table-header {
+  height  : 60px;
+  padding : 10px 10px 10px 40px;
+  width   : 100%;
+}
+
+.table-header-text {
+  display     : inline-block;
+  font-size   : 32px;
+  width       : 50%;
+}

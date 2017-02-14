@@ -27,7 +27,8 @@
   "dependencies": {
     "djtoolkit": "^1.1.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
@@ -37,6 +38,7 @@
     "babel-preset-react": "^6.23.0",
     "babel-register": "^6.23.0",
     "jest": "^18.1.0",
+    "json-loader": "^0.5.4",
     "webpack": "^2.2.1"
   }
 }
