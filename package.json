@@ -4,9 +4,9 @@
   "description": "A Node + React web application for running the \"power of a dream\" portion of a local charity auction.",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "build": "babel src/ -d dist/",
-    "start": "babel src/ -d dist/ && node dist/index.js"
+    "test": "babel src/ -d dist/ && jest",
+    "build": "babel src/ -d dist/ && ./node_modules/.bin/webpack -d",
+    "start": "babel src/ -d dist/ && ./node_modules/.bin/webpack -d && node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,14 +25,18 @@
   },
   "homepage": "https://github.com/derekjohnston806/auction-web-app#readme",
   "dependencies": {
-    "djtoolkit": "^1.1.1"
+    "djtoolkit": "^1.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-jest": "^18.0.0",
+    "babel-loader": "^6.3.0",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-register": "^6.23.0",
-    "jest": "^18.1.0"
+    "jest": "^18.1.0",
+    "webpack": "^2.2.1"
   }
 }
