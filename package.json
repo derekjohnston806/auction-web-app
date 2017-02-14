@@ -1,0 +1,29 @@
+{
+  "name": "auction-web-app",
+  "version": "1.0.0",
+  "description": "A Node + React web application for running the \"power of a dream\" portion of a local charity auction.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekjohnston806/auction-web-app.git"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "Web",
+    "Application"
+  ],
+  "author": "Derek Johnston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derekjohnston806/auction-web-app/issues"
+  },
+  "homepage": "https://github.com/derekjohnston806/auction-web-app#readme",
+  "dependencies": {
+    "jest": "^18.1.0"
+  }
+}
