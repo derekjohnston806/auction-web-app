@@ -4,5 +4,11 @@ node_js:
   - "7"
   - "iojs"
 
+install:
+  - "npm install"
+
 before_script:
   - "npm run build"
+
+script:
+  - "npm test"
