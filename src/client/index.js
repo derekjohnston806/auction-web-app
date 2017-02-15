@@ -11,6 +11,7 @@ import React, { Component }               from "react";
 import ReactDOM                           from "react-dom";
 import { Router, Route, browserHistory }  from "react-router";
 import DashboardScene from "./scenes/DashboardScene.react";
+import NewEventScene from "./scenes/NewEventScene.react";
 
 class Application extends Component {
   /**
@@ -28,6 +29,7 @@ class Application extends Component {
   render() {
     return <Router history={ browserHistory }>
       <Route path="/" component={ DashboardScene } />
+      <Route path="/newEvent" component={ NewEventScene } />
     </Router>
   }
 }

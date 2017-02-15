@@ -26,6 +26,7 @@ class TableHeader extends Component {
   render() {
     return <div className="table-header">
       <TableHeaderText text={ this.props.text } />
+      { this.props.actionButton }
     </div>
   }
 }

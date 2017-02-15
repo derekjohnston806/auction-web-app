@@ -13,6 +13,7 @@ import React, { Component } from "react";
 import Header from "../components/Header.react";
 import HeaderText from "../components/HeaderText.react";
 import Table from "../components/Table.react";
+import NewEventsButton from "../components/NewEventsButton.react";
 
 class DashboardScene extends Component {
   /**
@@ -38,6 +39,7 @@ class DashboardScene extends Component {
     };
 
     this.fetchTableData = this.fetchTableData.bind(this);
+    this.navigateToNewEventScene = this.navigateToNewEventScene.bind(this);
   }
 
   /**
@@ -72,8 +74,25 @@ class DashboardScene extends Component {
       <Header>
         <HeaderText text="Auction Dashboard" />
       </Header>
-      <Table headerText="My Events" data={ this.state.tableData } />
+      <Table headerText="My Events" data={ this.state.tableData } actionButton={ <NewEventsButton onClick={ this.navigateToNewEventScene } /> } />
     </div>
+  }
+
+  /**
+    navigateToNewEventScene()
+
+    @desc:
+      - Invoke the 'push' method on the router property to navigate to the
+        'new event' scene.
+
+    @param:
+      - null
+
+    @return:
+      - null
+  */
+  navigateToNewEventScene() {
+    this.props.router.push("newEvent");
   }
 
   /**
